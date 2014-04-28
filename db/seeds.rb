@@ -9,3 +9,8 @@ user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 # Environment variables (ENV['...']) can be set in the file config/application.yml.
 # See http://railsapps.github.io/rails-environment-variables.html
+categories = ["Ruby", "Ruby on Rails", "Servers", "Pentaho","MEAN","CSS","JS"]
+categories.each do |cat|
+  category = Category.where(name: cat).first_or_create!
+  # category.save!
+end

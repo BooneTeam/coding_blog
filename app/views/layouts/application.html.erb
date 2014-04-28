@@ -8,15 +8,22 @@
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag 'vendor/modernizr' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.localScroll.js' %>
+    <%= javascript_include_tag 'jquery.scrollTo.js' %>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <header>
-      <%= render 'layouts/navigation' %>
+      <div class="sticky">
+        <%= render 'layouts/navigation' %>
+      </div>
     </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
+    <div class="inner-wrap">
+      <main role="main">
+        <%= render 'layouts/messages' %>
+        <%= render 'layouts/sidebar_left'%>
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>

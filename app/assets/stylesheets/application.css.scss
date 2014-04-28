@@ -13,3 +13,124 @@
  *= require_tree .
  *= require_self
  */
+
+ @mixin fade-to-black{
+  background: #feffff !important; /* Old browsers */
+  background: -moz-linear-gradient(top, #feffff 0%, #feffff 0%, #2a211c 94%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(0%,#feffff), color-stop(94%,#2a211c)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* IE10+ */
+  background: linear-gradient(to bottom, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
+}
+
+
+body{
+  background-color:#2A211C;
+  color:white
+}
+
+
+.inner-wrap{
+  margin:0px;
+  padding:0px;
+}
+
+main{
+  margin:15px 0px 0px 0px;
+  padding:0px;
+  background-color:#2A211C;
+}
+
+.top-bar, top-bar-section ul li{
+  @include fade-to-black;
+  a:hover{
+    color:black !important;
+  }
+}
+
+.top-bar-section ul li{
+  a{
+    @include fade-to-black;
+  }
+}
+
+.row{
+  max-width: 80rem;
+}
+
+.sidebar{
+  position:relative;
+  margin:-10px 0px 0px 0px;
+  background-color:#2A211C;
+}
+
+.side-nav li{
+  border-bottom:solid black 2px;
+  a{
+    color:white !important;
+  }
+  a:after {content:
+    " \00a0\00bb";
+  }
+  a:hover{
+    color:#007cba !important;
+  }
+}
+
+.about-wrap{
+  position:fixed;
+  top:45px;
+  left:150px;
+}
+
+.about-nav{
+  @extend .sidebar;
+}
+
+#hero{
+  padding:0px;
+  height:480px;
+  background-image:url("youngG.png");
+  background-repeat:no-repeat;
+}
+
+#hero .intro{
+  min-height:480px;
+}
+
+.fuck{
+  min-height:1000px;
+  h1{
+  color:white !important;
+  }
+}
+
+.terminal{
+ background-color:gray;
+ p{
+  padding:10px;
+  font-family:"Lucida Console", Monaco, monospace;
+ }
+}
+
+.code{
+  background-color:black;
+  padding:10px;
+  p{
+    font-family:"Lucida Console", Monaco, monospace;
+  }
+}
+
+.user_input{
+  color:red;
+}
+
+.user_input{
+    &:before {content:'\003C';}
+    &:after  {content:'\003E';}
+}
+
+
+

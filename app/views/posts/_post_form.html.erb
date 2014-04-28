@@ -1,0 +1,15 @@
+<div class="authform" id="new-post">
+  <div class="form-group">
+  <%=simple_nested_form_for @post do |f| %>
+  <%= f.input :title %>
+  <%= f.association :category, label_method: :name, value_method: :id, include_blank: false, as: :select, collection: Category.all %>
+  <%= f.input :description %>
+    <%= f.simple_fields_for :articles do |ff|%>
+      <%= ff.input :body %>
+      <%= ff.link_to_remove "Remove this article" %>
+    <% end %>
+    <%= f.link_to_add "Add Another Article", :articles %>
+  <%= f.submit class: "submit" %>
+  <% end %>
+</div>
+</div>

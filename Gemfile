@@ -16,15 +16,23 @@ gem 'mysql2'
 gem 'pundit'
 gem 'simple_form'
 gem 'thin'
+gem 'nested_form'
+
 group :development do
+  gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
   gem 'quiet_assets'
   gem 'rails_layout'
 end
 group :development, :test do
+  gem 'rb-readline'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'launchy'
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'guard-rspec'
+  gem 'guard-livereload'
 end
 group :test do
   gem 'capybara'

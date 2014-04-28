@@ -9,7 +9,9 @@
   font-weight: normal;
   color: white;
   padding: 0 15px; }
-
+h1,h2,h3,h4,h5,h6{
+  color:white;
+}
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
 @mixin twelve-columns {
@@ -85,8 +87,31 @@ section {
   font-size: rem-calc(16);
   color: white;
 }
+
+.authform#new-post{
+  max-width:800px;
+  min-width:320px;
+}
+
 .button-xs {
   @extend .button;
   @extend .radius;
   @extend .tiny;
+}
+
+.post-description{
+   @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 4,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+  margin:0px;
+  color:black;
 }

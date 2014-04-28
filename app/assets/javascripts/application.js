@@ -14,7 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require foundation
+//= require jquery_nested_form
+//= require jquery.localScroll
+//= require jquery.scrollTo
 //= require_tree .
+
 $(function() {
   $(document).foundation();
+  $(document).foundation('joyride', 'start');
 });
+$(document).ready(function() {
+   $('#about-nav').localScroll({duration:800, offset:-45});
+});
+
+
+
+
+

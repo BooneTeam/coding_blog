@@ -1,0 +1,45 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.all-posts{
+  margin-left:0px;
+  padding-left:0px;
+}
+
+.post-title{
+  color:#007cba !important;
+}
+
+.post-description li{
+  height: 300px;
+  overflow: hidden;
+}
+
+.post-desc-content{
+  background-color: white;
+  padding:15px;
+  height: 290px;
+  border-radius:5px;
+}
+
+.post-desc-content:hover{
+  box-shadow: 1px 1px 1px #ffffff;
+}
+
+.art-body-text{
+  border-bottom:solid black 3px;
+  h3{
+    color:black;
+    font-weight: bold;
+  }
+}
+
+.show-post{
+  color:white;
+}
+
+.show-post h1{
+  color:white;
+}
