@@ -1,6 +1,10 @@
 class HomeController < ApplicationController
 
   def index
-    @posts = Post.all
+    if current_user
+      @posts = Post.all
+    else
+      @posts = Post.where(:active => true)
+    end
   end
 end

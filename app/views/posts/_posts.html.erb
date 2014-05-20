@@ -8,6 +8,7 @@
         <%= image_tag post.images.try(:first).try(:path) %>
         <% if user_signed_in? && current_user.admin? %>
         <%= link_to 'Edit Post', edit_post_path(post), :class =>"button tiny radius" %>
+        <%= post.active %>
         <%end %>
         </div>
       </li>

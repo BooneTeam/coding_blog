@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    if current_user
+      @posts = Post.all
+    else
+      @posts = Post.where(:active => true)
+    end
   end
 
   def new
@@ -38,7 +42,7 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :description, :category_id, {:articles_attributes => [:id, :body, :_destroy]})
+    params.require(:post).permit(:title, :description, :category_id, :active,{:articles_attributes => [:id, :body, :_destroy]})
   end
 
 end

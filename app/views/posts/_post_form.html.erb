@@ -2,6 +2,7 @@
   <div class="form-group">
   <%=simple_nested_form_for @post do |f| %>
   <%= f.input :title %>
+  <%= f.input :active, as: :boolean %>
   <%= f.association :category, label_method: :name, value_method: :id, include_blank: false, as: :select, collection: Category.all %>
   <%= f.input :description %>
     <%= f.simple_fields_for :articles do |ff|%>

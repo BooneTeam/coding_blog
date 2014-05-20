@@ -25,11 +25,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
 }
 
-
 body{
   background-color:#2A211C;
   color:white
 }
+
 
 
 .inner-wrap{
@@ -45,6 +45,7 @@ main{
 
 .top-bar, top-bar-section ul li{
   @include fade-to-black;
+
   a:hover{
     color:black !important;
   }
@@ -61,13 +62,12 @@ main{
 }
 
 .sidebar{
-  position:relative;
+  position:fixed;
   margin:-10px 0px 0px 0px;
   background-color:#2A211C;
 }
 
 .side-nav li{
-  border-bottom:solid black 2px;
   a{
     color:white !important;
   }
@@ -92,12 +92,12 @@ main{
 #hero{
   padding:0px;
   height:480px;
-  background-image:url("youngG.png");
-  background-repeat:no-repeat;
 }
 
 #hero .intro{
   min-height:480px;
+  background-image:url("youngG.png");
+  background-repeat:no-repeat;
 }
 
 .fuck{
