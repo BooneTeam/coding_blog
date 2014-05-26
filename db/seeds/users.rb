@@ -1,1 +1,0 @@
-User.create(:id => 1, :email => "user@example.com", :encrypted_password => "$2a$10$Fq0l09CM1EYkZQfMG73JgO/9gh9aO5hgjXLxbry2xHe/4Wslee6De", :sign_in_count => 13, :current_sign_in_at => Thu, 22 May 2014 18:12:13 UTC +00:00, :last_sign_in_at => Thu, 22 May 2014 13:10:57 UTC +00:00, :current_sign_in_ip => "127.0.0.1", :last_sign_in_ip => "127.0.0.1", :role => 2)
