@@ -19,6 +19,7 @@ gem 'pundit'
 gem 'simple_form'
 gem 'thin'
 gem 'nested_form'
+gem 'seed_dumper'
 
 group :development do
   gem 'pry-rails'

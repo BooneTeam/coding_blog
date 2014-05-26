@@ -1,0 +1,8 @@
+Category.create(:id => 1, :name => "Ruby")
+Category.create(:id => 2, :name => "Pentaho")
+Category.create(:id => 3, :name => "Ruby on Rails")
+Category.create(:id => 4, :name => "Servers")
+Category.create(:id => 5, :name => "MEAN")
+Category.create(:id => 6, :name => "CSS")
+Category.create(:id => 7, :name => "JS")
+Category.create(:id => 8, :name => "SQL")
