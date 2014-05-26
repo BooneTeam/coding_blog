@@ -14,6 +14,7 @@ gem 'devise'
 gem 'figaro', :github=>"laserlemon/figaro"
 gem 'foundation-rails'
 gem 'pg'
+gem 'rails_12factor', group: :production
 gem 'pundit'
 gem 'simple_form'
 gem 'thin'
