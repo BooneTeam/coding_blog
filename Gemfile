@@ -30,10 +30,15 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'launchy'
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  # gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'guard-rspec'
   gem 'guard-livereload'
 end
+
+group :test, :darwin do
+  gem 'rb-fsevent'
+end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
