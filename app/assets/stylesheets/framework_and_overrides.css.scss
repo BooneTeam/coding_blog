@@ -69,13 +69,16 @@ body .il { color: #666666 } /* Literal.Number.Integer.Long */
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
-  line-height: 45px; }
+  line-height: 45px;
+    font-family: 'Rokkitt', serif;
+  font-size: 18px; }
 .top-bar .name a {
   font-weight: normal;
   color: white;
   padding: 0 15px; }
 h1,h2,h3,h4,h5,h6{
   color:white;
+  font-family: 'Rokkitt', serif;
 }
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes

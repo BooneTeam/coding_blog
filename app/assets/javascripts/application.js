@@ -23,7 +23,15 @@ $(function() {
   $(document).foundation('joyride', 'start');
 });
 $(document).ready(function() {
-   $('#about-nav').localScroll({duration:800, offset:-45});
+   $('#about-nav').localScroll({duration:2000, offset:-45});
+
+
+    $('.side-nav').hover(function(){
+        $(this).animate({width:'150px'},500);
+    },function(){
+        $(this).animate({width:'30px'},500);
+    }).trigger('mouseleave');
+
 });
 
 

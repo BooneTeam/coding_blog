@@ -14,6 +14,18 @@
  *= require_self
  */
 
+//= depend_on_asset "DiscoNight.ttf"
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+@font-face {
+    font-family: 'DiscoNight';
+    src: asset-url('DiscoNight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
  @mixin fade-to-black{
   background: #feffff !important; /* Old browsers */
   background: -moz-linear-gradient(top, #feffff 0%, #feffff 0%, #2a211c 94%) !important; /* FF3.6+ */
@@ -25,9 +37,26 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
 }
 
-body{
+body.home{
   background-color:#2A211C;
-  color:white
+  // background-image:url("black.jpg");
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body.about_bg{
+  background-color:black;
+  // background-image:url("black.jpg");
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.loaded,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
 }
 
 
@@ -37,10 +66,18 @@ body{
   padding:0px;
 }
 
-main{
+.home main{
   margin:15px 0px 0px 0px;
-  padding:0px;
+  // padding:0px 100px 0px 0px;
   background-color:#2A211C;
+  // background-image:url("black.jpg");
+}
+
+.about_bg main{
+  margin:15px 0px 0px 0px;
+  // padding:0px 100px 0px 0px;
+  background-color:black;
+  // background-image:url("black.jpg");
 }
 
 .top-bar, top-bar-section ul li{
@@ -53,6 +90,8 @@ main{
 
 .top-bar-section ul li{
   a{
+    font-family: 'Rokkitt', serif;
+    font-size: 18px;
     @include fade-to-black;
   }
 }
@@ -62,18 +101,39 @@ main{
 }
 
 .sidebar{
+  transition: ease 0.3s;
+  padding:0px;
   position:fixed;
-  margin:-10px 0px 0px 0px;
-  background-color:#2A211C;
+  left:0;
+  margin:-15px 0px 0px 0px;
+  z-index: 999;
+  // background-color:#2A211C;
 }
-
+.side-nav{
+  background-color:black;
+  overflow:hidden;
+  border-right: 1px solid #222;
+  padding:0px;
+  min-height: 350px;
+    :hover{
+    background-color: #332D2E;
+  }
+}
+.side-nav ul{margin:0;padding:0;width:200px;margin:10px;list-style:none;}
 .side-nav li{
+  margin:0;
+  border-bottom: 1px solid #222;
+  // border-right: 1px solid #222;
+  padding:10px;
+  white-space: nowrap;
+  font-family: 'Rokkitt', serif;
   a{
     color:white !important;
   }
-  a:after {content:
-    " \00a0\00bb";
-  }
+  a span{ margin:0 15px 0 0;}
+  // a:after {content:
+  //   " \00a0\00bb";
+  // }
   a:hover{
     color:#007cba !important;
   }
@@ -98,13 +158,6 @@ main{
   min-height:480px;
   background-image:url("youngG.png");
   background-repeat:no-repeat;
-}
-
-.fuck{
-  min-height:1000px;
-  h1{
-  color:white !important;
-  }
 }
 
 .terminal{

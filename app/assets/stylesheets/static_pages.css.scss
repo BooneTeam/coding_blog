@@ -1,3 +1,106 @@
 // Place all the styles related to the static_pages_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.row.large{
+  width:100%;
+  margin:0px 0px 0px 0px;
+}
+
+#about{
+  background-image:url("lift.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  text-align: right;
+  // height:200px;
+}
+
+#about-8{
+  background-image:url("bcg_slide-1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  text-align: right;
+  // height:200px;
+}
+
+#vitals{
+  text-align: center;
+  height:200px;
+  p{font-size:30px;
+    font-family: 'Roboto', sans-serif;
+  }
+  h3{
+    font-family: 'Rokkitt', serif;
+    font-size:50px;
+    font-weight: bold;
+  }
+  ul li{
+    list-style: none;
+  }
+}
+
+#skills{
+  text-align: center;
+  height:400px;
+  width:100%;
+  margin:auto;
+  p{font-size:30px;
+    font-family: 'Roboto', sans-serif;
+  }
+  h3{
+    font-family: 'Rokkitt', serif;
+    font-size:50px;
+    font-weight: bold;
+  }
+  ul li{
+    img{
+      height:80px;
+      width:80px;
+    }
+    display:inline;
+    float:left;
+    font-size:35px;
+    list-style: none;
+  }
+}
+
+
+#current{
+  // background-image:url("lin.png");
+  background-color:black;
+  text-align: center;
+}
+
+.build{
+  text-align: center;
+  margin:auto;
+  h2{
+    // float:right;
+    padding-top:10%;
+    color:white;
+  }
+}
+
+.build#picright{
+  img{
+    width:150px;
+    height:150px;
+    float:right;
+  }
+}
+
+.build#picleft{
+  img{
+    width:150px;
+    height:150px;
+    float:left;
+  }
+}
+
+
+.fake-for-scroll{
+  position:static;
+  background-color:black;
+  background-size:cover;
+  margin-top: 9155px;
+  height:100px;
+}

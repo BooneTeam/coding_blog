@@ -1,7 +1,8 @@
 class StaticPagesController < ApplicationController
 
   def about
-    render
+    @about_page = true
+    render :about
   end
 
 end
