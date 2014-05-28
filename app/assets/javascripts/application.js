@@ -16,6 +16,7 @@
 //= require jquery_nested_form
 //= require jquery.localScroll
 //= require jquery.scrollTo
+//= require main.js
 //= require skrollr.js
 //= require_tree .
 
