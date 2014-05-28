@@ -1,86 +1,86 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// // Place all the styles related to the posts controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.all-posts{
-  margin-left:5%;
-  padding:0px;
-}
+// .all-posts{
+//   margin-left:5%;
+//   padding:0px;
+// }
 
-.post-title{
-  color:#007cba !important;
-}
+// .post-title{
+//   color:#007cba !important;
+// }
 
-.post-description li div{
-  height: 350px;
-  // width:100%;
-  overflow: hidden;
-}
+// .post-description li div{
+//   height: 350px;
+//   // width:100%;
+//   // overflow: hidden;
+// }
 
-@mixin post-desc-content{
-  background-color: white;
-  border-radius:5px;
-}
+// @mixin post-desc-content{
+//   background-color: white;
+//   border-radius:5px;
+// }
 
-.post-desc-content{
-  @include post-desc-content;
-  padding:15px;
-  height: 290px;
-}
+// .post-desc-content{
+//   @include post-desc-content;
+//   padding:15px;
+//   height: 290px;
+// }
 
-.small-post-list{
-  list-style: none;
-}
-.small-post-desc-content{
-  @include post-desc-content;
-  color:black;
-}
+// .small-post-list{
+//   list-style: none;
+// }
+// .small-post-desc-content{
+//   @include post-desc-content;
+//   color:black;
+// }
 
-.post-desc-content:hover{
-  background-color:lightgrey;
-}
+// .post-desc-content:hover{
+//   background-color:lightgrey;
+// }
 
-.art-body-text.big{
-  border-bottom:solid black 3px;
-  color:lightblue;
-  h3{
-    color:black;
-    font-weight: bold;
-  }
-}
+// .art-body-text.big{
+//   border-bottom:solid black 3px;
+//   color:lightblue;
+//   h3{
+//     color:black;
+//     font-weight: bold;
+//   }
+// }
 
-.art-body-text.small{
-  border-bottom:solid black 3px;
-  color:lightblue;
-  width:100%;
-  h3{
-    color:black;
-    font-weight: bold;
-  }
-}
+// .art-body-text.small{
+//   border-bottom:solid black 3px;
+//   color:lightblue;
+//   width:100%;
+//   h3{
+//     color:black;
+//     font-weight: bold;
+//   }
+// }
 
-.show-post{
-  p{ color:black;
-  font-size:20px;
-  text-align: center; }
-  border-top:lightblue thick solid;
-  background-color:white;
-  border-radius:25px;
+// .show-post{
+//   p{ color:black;
+//   font-size:20px;
+//   text-align: center; }
+//   border-top:lightblue thick solid;
+//   background-color:white;
+//   border-radius:25px;
 
-}
+// }
 
-.show-post h1{
-  color:white;
-  border-bottom: dashed black thin;
-}
+// .show-post h1{
+//   color:white;
+//   border-bottom: dashed black thin;
+// }
 
-.resume{
-  // background-image:url("blur1.jpeg");
-  min-height:480px;
-  background-color: #2A211C;
-  // background-size:cover;
-  // background-repeat:no-repeat;
-}
+// .resume{
+//   // background-image:url("blur1.jpeg");
+//   min-height:480px;
+//   background-color: #2A211C;
+//   // background-size:cover;
+//   // background-repeat:no-repeat;
+// }
 
 
