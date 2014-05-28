@@ -37,6 +37,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
 }
 
+body{
+  overflow:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
 body.home{
   background-color:#2A211C;
   // background-image:url("black.jpg");
