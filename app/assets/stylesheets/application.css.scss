@@ -1,214 +1,214 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+// /*
+//  * This is a manifest file that'll be compiled into application.css, which will include all the files
+//  * listed below.
+//  *
+//  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+//  * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+//  *
+//  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+//  * compiled file so the styles you add here take precedence over styles defined in any styles
+//  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+//  * file per style scope.
+//  *
+//  *= require_tree .
+//  *= require_self
+//  */
 
-//= depend_on_asset "DiscoNight.ttf"
+// //= depend_on_asset "DiscoNight.ttf"
 
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Roboto);
+// @import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
 
-@font-face {
-    font-family: 'DiscoNight';
-    src: asset-url('DiscoNight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'DiscoNight';
+//     src: asset-url('DiscoNight.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
- @mixin fade-to-black{
-  background: #feffff !important; /* Old browsers */
-  background: -moz-linear-gradient(top, #feffff 0%, #feffff 0%, #2a211c 94%) !important; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(0%,#feffff), color-stop(94%,#2a211c)) !important; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* IE10+ */
-  background: linear-gradient(to bottom, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
-}
+//  @mixin fade-to-black{
+//   background: #feffff !important; /* Old browsers */
+//   background: -moz-linear-gradient(top, #feffff 0%, #feffff 0%, #2a211c 94%) !important; /* FF3.6+ */
+//   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(0%,#feffff), color-stop(94%,#2a211c)) !important; /* Chrome,Safari4+ */
+//   background: -webkit-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* Chrome10+,Safari5.1+ */
+//   background: -o-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* Opera 11.10+ */
+//   background: -ms-linear-gradient(top, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* IE10+ */
+//   background: linear-gradient(to bottom, #feffff 0%,#feffff 0%,#2a211c 94%) !important; /* W3C */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
+// }
 
-body{
-  overflow-y: scroll;
-}
+// body{
+//   overflow-y: scroll;
+// }
 
-body.home{
-  background-color:#2A211C;
-  // background-image:url("black.jpg");
-  color:white;
-  font-family: 'Roboto', sans-serif;
-}
-
-
-body.about_bg{
-  background-color:black;
-  // background-image:url("black.jpg");
-  color:white;
-  font-family: 'Roboto', sans-serif;
-}
-// .loaded,
-// .no-js section {
-  // opacity: 1;
-  // -webkit-transition: opacity 300ms ease-out;
-  // -moz-transition: opacity 300ms ease-out;
-  // transition: opacity 300ms ease-out;
+// body.home{
+//   background-color:#2A211C;
+//   // background-image:url("black.jpg");
+//   color:white;
+//   font-family: 'Roboto', sans-serif;
 // }
 
 
+// body.about_bg{
+//   background-color:black;
+//   // background-image:url("black.jpg");
+//   color:white;
+//   font-family: 'Roboto', sans-serif;
+// }
+// // .loaded,
+// // .no-js section {
+//   // opacity: 1;
+//   // -webkit-transition: opacity 300ms ease-out;
+//   // -moz-transition: opacity 300ms ease-out;
+//   // transition: opacity 300ms ease-out;
+// // }
 
-.inner-wrap{
-  margin:0px;
-  padding:0px;
-}
 
-.inner-content{
-  margin:15px;
-  padding:10px;
 
-}
+// .inner-wrap{
+//   margin:0px;
+//   padding:0px;
+// }
 
-.home main{
-  margin:15px 0px 0px 0px;
-  // padding:0px 100px 0px 0px;
-  background-color:#2A211C;
-  // background-image:url("black.jpg");
-}
+// .inner-content{
+//   margin:15px;
+//   padding:10px;
 
-.about_bg main{
-  margin:15px 0px 0px 0px;
-  // padding:0px 100px 0px 0px;
-  background-color:black;
-  // background-image:url("black.jpg");
-}
+// }
 
-.top-bar, top-bar-section ul li{
-  @include fade-to-black;
+// .home main{
+//   margin:15px 0px 0px 0px;
+//   // padding:0px 100px 0px 0px;
+//   background-color:#2A211C;
+//   // background-image:url("black.jpg");
+// }
 
-  a:hover{
-    color:black !important;
-  }
-}
+// .about_bg main{
+//   margin:15px 0px 0px 0px;
+//   // padding:0px 100px 0px 0px;
+//   background-color:black;
+//   // background-image:url("black.jpg");
+// }
 
-.top-bar-section ul li{
-  a{
-    font-family: 'Rokkitt', serif;
-    font-size: 18px;
-    @include fade-to-black;
-  }
-}
+// .top-bar, top-bar-section ul li{
+//   @include fade-to-black;
 
-.row{
-  max-width: 80rem;
-}
+//   a:hover{
+//     color:black !important;
+//   }
+// }
 
-.sidebar{
-  transition: ease 0.3s;
-  padding:0px;
-  position:fixed;
-  left:0;
-  margin:-15px 0px 0px 0px;
-  z-index: 999;
-  // background-color:#2A211C;
-}
-.side-nav{
-  background-color:black;
-  overflow:hidden;
-  border-right: 1px solid #222;
-  padding:0px;
-  min-height: 350px;
-    :hover{
-    background-color: #332D2E;
-  }
-}
-.side-nav ul{margin:0;padding:0;width:200px;margin:10px;list-style:none;}
-.side-nav li{
-  margin:0;
-  border-bottom: 1px solid #222;
-  // border-right: 1px solid #222;
-  padding:10px;
-  white-space: nowrap;
-  font-family: 'Rokkitt', serif;
-  a{
-    color:white !important;
-  }
-  a span{ margin:0 15px 0 0;}
-  // a:after {content:
-  //   " \00a0\00bb";
-  // }
-  a:hover{
-    color:#007cba !important;
-  }
-}
+// .top-bar-section ul li{
+//   a{
+//     font-family: 'Rokkitt', serif;
+//     font-size: 18px;
+//     @include fade-to-black;
+//   }
+// }
 
-.about-wrap{
-  position:fixed;
-  top:45px;
-  left:150px;
-}
+// .row{
+//   max-width: 80rem;
+// }
 
-.about-nav{
-  @extend .sidebar;
-}
+// .sidebar{
+//   transition: ease 0.3s;
+//   padding:0px;
+//   position:fixed;
+//   left:0;
+//   margin:-15px 0px 0px 0px;
+//   z-index: 999;
+//   // background-color:#2A211C;
+// }
+// .side-nav{
+//   background-color:black;
+//   overflow:hidden;
+//   border-right: 1px solid #222;
+//   padding:0px;
+//   min-height: 350px;
+//     :hover{
+//     background-color: #332D2E;
+//   }
+// }
+// .side-nav ul{margin:0;padding:0;width:200px;margin:10px;list-style:none;}
+// .side-nav li{
+//   margin:0;
+//   border-bottom: 1px solid #222;
+//   // border-right: 1px solid #222;
+//   padding:10px;
+//   white-space: nowrap;
+//   font-family: 'Rokkitt', serif;
+//   a{
+//     color:white !important;
+//   }
+//   a span{ margin:0 15px 0 0;}
+//   // a:after {content:
+//   //   " \00a0\00bb";
+//   // }
+//   a:hover{
+//     color:#007cba !important;
+//   }
+// }
 
-#hero{
-  padding:0px;
-  // height:480px;
-}
+// .about-wrap{
+//   position:fixed;
+//   top:45px;
+//   left:150px;
+// }
 
-#hero .intro{
-  min-height:480px;
-  background-image:image-url("codepic.png");
-  background-repeat:no-repeat;
-  margin-left:20%;
-}
+// .about-nav{
+//   @extend .sidebar;
+// }
 
-#hero .intro-small{
-  min-height:200px;
-  background-image:image-url("codepic.png");
-  background-size:100%;
-  margin-left:15px;
-  background-repeat:no-repeat;
-}
+// #hero{
+//   padding:0px;
+//   // height:480px;
+// }
 
-.terminal{
- background-color:gray;
- p{
-  padding:10px;
-  text-align: left;
-  font-family:"Lucida Console", Monaco, monospace;
- }
-}
+// #hero .intro{
+//   min-height:480px;
+//   background-image:image-url("codepic.png");
+//   background-repeat:no-repeat;
+//   margin-left:20%;
+// }
 
-.code{
-  background-color:lightyellow;
-  border-radius:15px;
-  border:thin solid black;
-  margin:10px;
-  padding:10px;
-  word-wrap: break-word;
-  p{
-    text-align: left;
-    font-family:"Lucida Console", Monaco, monospace;
-  }
-}
+// #hero .intro-small{
+//   min-height:200px;
+//   background-image:image-url("codepic.png");
+//   background-size:100%;
+//   margin-left:15px;
+//   background-repeat:no-repeat;
+// }
 
-.user_input{
-  color:red;
-}
+// .terminal{
+//  background-color:gray;
+//  p{
+//   padding:10px;
+//   text-align: left;
+//   font-family:"Lucida Console", Monaco, monospace;
+//  }
+// }
 
-.user_input{
-    &:before {content:'\003C';}
-    &:after  {content:'\003E';}
-}
+// .code{
+//   background-color:lightyellow;
+//   border-radius:15px;
+//   border:thin solid black;
+//   margin:10px;
+//   padding:10px;
+//   word-wrap: break-word;
+//   p{
+//     text-align: left;
+//     font-family:"Lucida Console", Monaco, monospace;
+//   }
+// }
+
+// .user_input{
+//   color:red;
+// }
+
+// .user_input{
+//     &:before {content:'\003C';}
+//     &:after  {content:'\003E';}
+// }
 
 
 
