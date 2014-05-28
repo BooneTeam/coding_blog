@@ -18,10 +18,10 @@
 //= require jquery.scrollTo
 //= require_tree .
 
-$(function() {
-  $(document).foundation();
-  // $(document).foundation('joyride', 'start');
-});
+// $(function() {
+//   $(document).foundation();
+//   // $(document).foundation('joyride', 'start');
+// });
 $(document).ready(function() {
    // $('#about-nav').localScroll({duration:2000, offset:-45});
 
