@@ -37,9 +37,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
 }
 
-body{
-  overflow:auto;
-}
+body,html {height:100%; margin:0; padding:0;}
 
 body.home{
   background-color:#2A211C;
@@ -74,9 +72,6 @@ body.about_bg{
   margin:15px;
   padding:10px;
 
-}
-main{
-  -webkit-overflow-scrolling:touch;
 }
 
 .home main{
