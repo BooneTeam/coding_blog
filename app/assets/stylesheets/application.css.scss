@@ -37,8 +37,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
 }
 
-body,html {height:100%; margin:0; padding:0;}
-
 body.home{
   background-color:#2A211C;
   // background-image:url("black.jpg");
@@ -56,9 +54,9 @@ body.about_bg{
 .loaded,
 .no-js section {
   opacity: 1;
-  -webkit-transition: opacity 300ms ease-out;
-  -moz-transition: opacity 300ms ease-out;
-  transition: opacity 300ms ease-out;
+  // -webkit-transition: opacity 300ms ease-out;
+  // -moz-transition: opacity 300ms ease-out;
+  // transition: opacity 300ms ease-out;
 }
 
 
@@ -159,13 +157,14 @@ body.about_bg{
 
 #hero{
   padding:0px;
-  height:480px;
+  // height:480px;
 }
 
 #hero .intro{
   min-height:480px;
   background-image:image-url("codepic.png");
   background-repeat:no-repeat;
+  margin-left:20%;
 }
 
 #hero .intro-small{
