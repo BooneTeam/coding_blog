@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
+//= require jquery_nested_form
 //= require jquery.localScroll
 //= require jquery.scrollTo
-//= require_tree .
+
 
 // $(function() {
 //   $(document).foundation();
