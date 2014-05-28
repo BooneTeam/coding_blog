@@ -37,6 +37,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2a211c',GradientType=0 ) !important; /* IE6-9 */
 }
 
+body{
+  overflow-y: scroll;
+}
+
 body.home{
   background-color:#2A211C;
   // background-image:url("black.jpg");
@@ -51,13 +55,13 @@ body.about_bg{
   color:white;
   font-family: 'Roboto', sans-serif;
 }
-.loaded,
-.no-js section {
-  opacity: 1;
+// .loaded,
+// .no-js section {
+  // opacity: 1;
   // -webkit-transition: opacity 300ms ease-out;
   // -moz-transition: opacity 300ms ease-out;
   // transition: opacity 300ms ease-out;
-}
+// }
 
 
 
