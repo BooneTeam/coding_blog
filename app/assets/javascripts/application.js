@@ -16,6 +16,8 @@
 //= require jquery_nested_form
 //= require jquery.localScroll
 //= require jquery.scrollTo
+//= require skrollr.js
+//= require_tree .
 
 $(document).ready(function() {
    // $('#about-nav').localScroll({duration:2000, offset:-45});
