@@ -30,14 +30,6 @@ $(document).ready(function() {
         $(this).animate({width:'30px'},500);
     }).trigger('mouseleave');
 
-    // Init Skrollr
-    var s = skrollr.init({
-        // render: function(data) {
-        //     //Debugging - Log the current scroll position.
-        //     console.log(data.curTop);
-        // }
-    });
-
 });
 
 
