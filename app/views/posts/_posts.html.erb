@@ -1,4 +1,4 @@
-<div class="large-10 medium-9 columns all-posts">
+<div class="large-10 medium-9 show-for-medium-up columns all-posts">
   <ul class="post-description">
     <% @posts.each do |post| %>
       <li>
@@ -15,3 +15,22 @@
     <% end %>
   </ul>
 </div>
+<div class="show-for-small-only">
+  <ul class="small-post-list">
+    <% @posts.each do |post| %>
+      <li>
+        <div class="small-post-desc-content">
+        <h3><%= link_to post.title, post_path(post) %></h3>
+        <p><%= post.description %></p>
+        <%= image_tag post.images.try(:first).try(:path) %>
+        <% if user_signed_in? && current_user.admin? %>
+        <%= link_to 'Edit Post', edit_post_path(post), :class =>"button tiny radius" %>
+        <%= post.active %>
+        <%end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+

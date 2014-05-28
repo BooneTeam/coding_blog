@@ -1,12 +1,16 @@
 <% provide(:title, "#{@post.category.name} Tips") %>
 <div class="row">
+
   <div class="small-10 small-centered columns show-post">
     <h1 class= "post-title"><%= @post.title %></h1>
     <p class="description" ><%= @post.description %></p>
     <div class="article-body">
       <% if @post.articles != [] %>
       <% @post.articles.each do |article| %>
-        <div class="art-body-text">
+        <div class="art-body-text big show-for-medium-up">
+          <%=render text: article.body.html_safe %>
+        </div>
+        <div class="art-body-text small show-for-small-only">
           <%=render text: article.body.html_safe %>
         </div>
         <% end %>

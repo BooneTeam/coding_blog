@@ -66,6 +66,12 @@ body.about_bg{
   padding:0px;
 }
 
+.inner-content{
+  margin:15px;
+  padding:10px;
+
+}
+
 .home main{
   margin:15px 0px 0px 0px;
   // padding:0px 100px 0px 0px;
@@ -160,18 +166,32 @@ body.about_bg{
   background-repeat:no-repeat;
 }
 
+#hero .intro-small{
+  min-height:200px;
+  background-image:image-url("codepic.png");
+  background-size:100%;
+  margin-left:15px;
+  background-repeat:no-repeat;
+}
+
 .terminal{
  background-color:gray;
  p{
   padding:10px;
+  text-align: left;
   font-family:"Lucida Console", Monaco, monospace;
  }
 }
 
 .code{
-  background-color:black;
+  background-color:lightyellow;
+  border-radius:15px;
+  border:thin solid black;
+  margin:10px;
   padding:10px;
+  word-wrap: break-word;
   p{
+    text-align: left;
     font-family:"Lucida Console", Monaco, monospace;
   }
 }
