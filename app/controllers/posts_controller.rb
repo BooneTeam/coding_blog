@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  after_action :verify_authorized, :except => [:index,:show]
+
   def index
     if current_user
       @posts = Post.all
@@ -9,10 +11,12 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    authorize @post
   end
 
   def create
     post = Post.new(post_params)
+    authorize post
     if post.save
       redirect_to post
     else
@@ -22,10 +26,12 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
+    authorize @post
   end
 
   def update
     @post = Post.find(params[:id])
+    authorize @post
     if @post.update_attributes!(post_params)
       redirect_to @post
     else
@@ -38,11 +44,12 @@ class PostsController < ApplicationController
   end
 
   def destroy
-
+    @post = Post.find(params[:id])
+    authorize @post
   end
 
   def post_params
-    params.require(:post).permit(:title, :description, :category_id, :active,{:articles_attributes => [:id, :body, :_destroy]})
+    params.require(:post).permit(:title, :description, :category_id, :active,{:articles_attributes => [:id,:title, :body, :_destroy]})
   end
 
 end

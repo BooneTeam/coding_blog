@@ -2,11 +2,14 @@
 <div class="row">
 
   <div class="small-10 small-centered columns show-post">
-    <h1 class= "post-title"><%= @post.title %></h1>
-    <p class="description" ><%= @post.description %></p>
+    <div class="post-title-desc">
+      <h1 class="post-title-text"><%= @post.title %></h1>
+      <p class="description" ><%= @post.description %></p>
+    </div>
     <div class="article-body">
       <% if @post.articles != [] %>
       <% @post.articles.each do |article| %>
+        <h4 class="art-title"><%= article.title%></h4>
         <div class="art-body-text big show-for-medium-up">
           <%=render text: article.body.html_safe %>
         </div>

@@ -41,8 +41,13 @@
   background-color:lightgrey;
 }
 
+.art-title{
+  text-align: center;
+  font-weight: bold;
+}
+
 .art-body-text.big{
-  border-bottom:solid black 3px;
+  border-bottom:solid thin black;
   color:lightblue;
   h3{
     color:black;
@@ -51,7 +56,7 @@
 }
 
 .art-body-text.small{
-  border-bottom:solid black 3px;
+  border-bottom:solid thin black;
   color:lightblue;
   width:100%;
   h3{
@@ -61,26 +66,50 @@
 }
 
 .show-post{
-  p{ color:black;
-  font-size:20px;
-  text-align: center; }
+  p{ color:black;}
   border-top:lightblue thick solid;
   background-color:white;
   border-radius:25px;
 
 }
 
-.show-post h1{
-  color:white;
+.post-title-desc{
+  padding:10px;
   border-bottom: dashed black thin;
+  .post-title-text{
+    margin-bottom:-10px;
+    padding-bottom:0px;
+  }
+  .description{
+    margin:0px;
+    font-size:10px;
+  }
 }
 
-.resume{
-  // background-image:url("blur1.jpeg");
-  min-height:480px;
-  background-color: #2A211C;
-  // background-size:cover;
-  // background-repeat:no-repeat;
+.article-body{
+  padding:10px;
+}
+
+.terminal{
+ background-color:gray;
+ p{
+  padding:10px;
+  text-align: left;
+  font-family:"Lucida Console", Monaco, monospace;
+ }
+}
+
+.code{
+  background-color:lightyellow;
+  border-radius:15px;
+  border:thin solid black;
+  margin:10px;
+  padding:10px;
+  word-wrap: break-word;
+  p{
+    text-align: left;
+    font-family:"Lucida Console", Monaco, monospace;
+  }
 }
 
 
