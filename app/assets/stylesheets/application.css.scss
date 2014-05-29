@@ -26,6 +26,10 @@
     font-style: normal;
 }
 
+@media all and (max-width:600px) {
+    body {font-size: 70%}
+}
+
  @mixin fade-to-black{
   background: #feffff !important; /* Old browsers */
   background: -moz-linear-gradient(top, #feffff 0%, #feffff 0%, #2a211c 94%) !important; /* FF3.6+ */

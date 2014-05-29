@@ -1,9 +1,4 @@
-<script type="text/javascript">
-$(function() {
-      var s = skrollr.init({
-    });
-});
-</script>
+
 
 <% provide(:title, 'About') %>
 
@@ -18,7 +13,7 @@ $(function() {
     </nav>
   </div>
 </div> -->
-<div class="row large">
+<div class="row large" data-emit-events>
   <div class="inner-content">
 <!--     <p>
       I have been developing since Early 2013 and am always interested in learning more.
@@ -62,14 +57,14 @@ $(function() {
     <div data-1300="opacity:1; margin-top:10px;" data-1850="opacity:0; margin-top:-100px;">
       <h2>Developer @ Lin Digital 2013 - Current</h2>
     </div>
-    <div id="vitals" data-1300="opacity:0; margin-top:50px;" data-2100="opacity:1; margin-top: 5px;" >
+    <div class="large-10 medium-8 show-for-medium-up" id="vitals" data-1300="opacity:0; margin-top:50px;margin-left:10%;margin-right:10%;" data-2100="opacity:1; margin-top: 5px;margin-left:10%;margin-right:10%" >
     <ul>
       <% words = ["Built gem to connect to Liverail API similar to the DFP Api gem","Worked on team to create Liverail Campaign Management and Reporting application.","Developed application to collect and report on statistics from 30+ publishers/advertisers for accounting and pacing of advertisements saving 3 + hours of manual work per day.","Worked with team to organize and implement a data warehouse solution using Pentaho","Created a live preview page for Google DFP ads for testing purposes","Added tagging ability to insertion orders"] %>
       <% first = 1300 %>
       <% second = 1302 %>
       <% words.each do |word| %>
       <li><% word.split("").each do |w| %>
-        <span data-<%=first%>=<%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %> >
+        <span data-<%=first%>=<%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
           <%= w == " " ? "\f " : w %>
         </span>
         <% first += 5 %>
@@ -79,6 +74,17 @@ $(function() {
       </li>
     </ul>
   </div>
+   <div class="show-for-small-only tinytxt" data-1300="opacity:0; margin-top:50px;margin-left:10%;margin-right:10%;" data-2100="opacity:1; margin-top: 5px;margin-left:10%;margin-right:10%">
+    <ul>
+      <% words = ["Built gem to connect to Liverail API similar to the DFP Api gem","Worked on team to create Liverail Campaign Management and Reporting application.","Developed application to collect and report on statistics from 30+ publishers/advertisers for accounting and pacing of advertisements saving 3 + hours of manual work per day.","Worked with team to organize and implement a data warehouse solution using Pentaho","Created a live preview page for Google DFP ads for testing purposes","Added tagging ability to insertion orders"] %>
+
+      <% words.each do |word| %>
+      <li><%= word %></li>
+        <% end %>
+      </ul>
+  </div>
+  </div>
+
    <div class="row build show-for-medium-up" id="picright" data-3200="opacity:0; position: fixed; top: 900px;right:100%; width:33%;margin:auto;" data-4500="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;right:35%"data-5000="opacity:0;">
     <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
     <%= image_tag("dive.jpg") %>
@@ -111,8 +117,8 @@ $(function() {
   </div>
 </div>
 </div>
-<div class="fake-for-scroll">
-  </div>
+<!-- <div class="fake-for-scroll"> -->
+  <!-- </div> -->
   <!-- </div> -->
   <!-- <div class="row" id="current" data-1300="opacity:1 position: fixed; top: 395px; width:100%; margin-left:30%;" data-2100="opacity:1;  width:100%; position: fixed; top:395px; margin-left:0%;" > -->
   <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
@@ -193,6 +199,11 @@ $(function() {
     <h1>Interests</h1>
   </div> -->
   <!-- </div> -->
+<script type="text/javascript">
+      var s = skrollr.init({
+        forceHeight: true
+});
+</script>
 
 <!-- <ol class="joyride-list" data-joyride>
   <li data-id="firstStop" data-text="Next" data-options="tip_location: top">
