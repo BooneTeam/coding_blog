@@ -63,10 +63,14 @@
       <% first = 1300 %>
       <% second = 1302 %>
       <% words.each do |word| %>
-      <li><% word.split("").each do |w| %>
-        <span data-<%=first%>=<%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
+      <li><% word.split.each do |w| %>
+<!--         <span data-<%=first%>=<#%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<#%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
+          <#%= w == " " ? "\f " : w %>
+        </span> -->
+          <span data-<%=first%>=<%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
           <%= w == " " ? "\f " : w %>
         </span>
+        &nbsp
         <% first += 5 %>
         <% second += 5 %>
         <% end %>
