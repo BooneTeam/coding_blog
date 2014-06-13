@@ -7,7 +7,7 @@
       <p class="description" ><%= @post.description %></p>
     </div>
     <div class="article-body">
-      <% if @post.articles != [] %>
+      <% if !@post.articles.blank? %>
       <% @post.articles.each do |article| %>
         <h4 class="art-title"><%= article.title%></h4>
         <div class="art-body-text big show-for-medium-up">
