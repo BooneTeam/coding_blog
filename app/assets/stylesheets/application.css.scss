@@ -45,7 +45,7 @@
 body{
   overflow-y: scroll;
   background: url(blue.jpeg) no-repeat center center fixed;
-  background-size:100%;
+  background-size:cover;
 }
 
 body.home{
@@ -162,6 +162,7 @@ body.about_bg{
 #hero .intro-small{
   min-height:200px;
   margin-left:15px;
+  background:100%;
 }
 
 
