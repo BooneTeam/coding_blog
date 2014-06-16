@@ -5,11 +5,14 @@
   <div class="small-10 small-centered columns show-post">
     <div class="post-title-desc">
       <h1 class="post-title-text"><%= @post.title %></h1>
-      <p class="description" ><%= @post.description %></p>
+      <div>
+        <p class = "description"><%= @post.description %></p>
+        <p class = "description">Posted @ <%= @post.updated_at.to_date %> in <%= link_to @post.category.name, category_path(@post.category.id) %></p>
+      </div>
     </div>
     <div class="article-body">
       <% if !@post.articles.blank? %>
-      <% @post.articles.each do |article| %>
+      <% @post.articles.order(:id).each do |article| %>
         <h4 class="art-title"><%= article.title%></h4>
         <div class="art-body-text big show-for-medium-up">
           <%=render text: article.body.html_safe %>
