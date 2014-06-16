@@ -1,7 +1,4 @@
-
-
 <% provide(:title, 'About') %>
-
 
 <!-- <div class= "row sticky large-1 medium-1 columns about-wrap">
   <div id="about-nav">
@@ -204,6 +201,9 @@
   </div> -->
   <!-- </div> -->
 <script type="text/javascript">
+  $(document).ready(function(){
+      $(".footer").hide();
+  })
       var s = skrollr.init({
         forceHeight: true
 });

@@ -175,5 +175,21 @@ body.about_bg{
     &:after  {content:'\003E';}
 }
 
+.footer{
+  margin-top: 10px;
+  background: white;
+  text-align:center;
+  div{
+    p{
+      text-align: left;
+    }
+    ul{
+      list-style:none;
+      li{
+        display:inline;
+      }
+    }
+  }
+}
 
 
