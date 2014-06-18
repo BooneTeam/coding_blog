@@ -66,12 +66,32 @@
   }
 }
 
-#current{
+.current{
   // background-image:url("lin.png");
+  font-family: 'Rokkitt', serif;
   background-color:black;
   text-align: center;
-  #vitals{
-
+  h3{
+    color:darkslategrey;
+    font-weight:bold;
+  }
+  h4,h5{
+    color:white;
+  }
+  p{
+      margin-left:10%;
+      margin-right:10%;
+  }
+  #summary{
+    // text-align:center;
+    list-style: none;
+  }
+  #skills2{
+    // text-align: center;
+    list-style: none;
+    height:auto;
+    li{
+      text-decoration: underline;}
   }
 }
 

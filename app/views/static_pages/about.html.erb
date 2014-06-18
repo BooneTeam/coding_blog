@@ -1,14 +1,14 @@
 <% provide(:title, 'About') %>
 <div class="row large" data-emit-events>
   <div class="inner-content">
-    <div class="row show-for-medium-up" id="about" data-50="opacity:1 position: fixed; top: 45px; width:100%; height:350px" data-200="opacity:1;  width:100%; position: fixed;" data-1200="" data-2400="opacity:1;  width:100%; position: fixed; top: -50px;" >
+    <div class="row show-for-medium-up" id="about" data-50="opacity:1; position: fixed; top: 45px; width:100%; height:350px" data-200="opacity:1;  width:100%; position: fixed;" data-1200="" data-2400="opacity:0;  width:100%; position: fixed; top: -50px;">
      <a name="about"></a>
      <div id="vitals" data-50="opacity:1; margin-top:50px;" data-200="opacity:0; margin-top: 70px;" >
        <h3>GARRETT A. BOONE</h3>
        <p>WEB DEVELOPER</p>
        <p>AUSTIN,TX</p>
      </div>
-     <div id="skills" data-110="transform:scale(0) rotate(0deg);margin-left:0%;opacity:0;" data-500="transform:scale(1) rotate(0deg);opacity:1; margin-top:-175px;margin-left:25%;opacity:1;" data-1000="" data-1200="transform:scale(5) rotate(0deg);opacity:0;margin-left:100%;">
+     <div id="skills" data-110="transform:scale(0) rotate(5deg);margin-left:0%;opacity:0;" data-500="transform:scale(1) rotate(0deg);opacity:1; margin-top:-175px;margin-left:25%;opacity:1;" data-1000="" data-1200="transform:scale(5) rotate(-5deg);opacity:0;margin-left:100%;">
       <ul>
         <li><%=image_tag("git.png")%></li>
         <li><%=image_tag("jq.png")%></li>
@@ -22,73 +22,64 @@
     </div>
   </div>
   <div class="show-for-small-only small-12">
-     <div id="vitals" data-50="opacity:1; margin-top:50px;" data-500="opacity:0; margin-top: 70px;" >
-      <div id="small-vit">
-       <h3>GARRETT A. BOONE</h3>
-       <p>WEB DEVELOPER</p>
-       <p>AUSTIN,TX</p>
-     </div>
-     </div>
+   <div id="vitals" data-50="opacity:1; margin-top:50px;" data-500="opacity:0; margin-top: 70px;" >
+    <div id="small-vit">
+     <h3>GARRETT A. BOONE</h3>
+     <p>WEB DEVELOPER</p>
+     <p>AUSTIN,TX</p>
+   </div>
+ </div>
+</div>
+<div class="row current" data-50="opacity:1; position: fixed; top: 395px; width:100%;" data-2000="width:100%; position: fixed; top:45px; height:400px;" data-2500="opacity:0;">
+  <!-- <div class="columns large-8 small-centered" > -->
+    <!-- <ul id="summary"> -->
+      <h3>About</h3>
+      <p> Personally developing since 2012</p>
+      <p> Professionally developing since mid 2013</p>
+      <p> I am currently employed at Lin-Digital, a major player in online advertising.</p>
+      <p>I've gained valuable professional experience from working with and obtaining guidance from senior developers while at Lin-Digital.</p>
+      <p>Currently I'm experimenting with tons of fun things. ie: Angular,Mongodb,Node.js....too many to list here.</p>
+    <!-- </ul> -->
   </div>
-  <div class="row" id="current" data-1300="opacity:1 position: fixed; top: 395px; width:100%;" data-2100="opacity:1;  width:100%; position: fixed; top:45px; " >
-    <%= image_tag("lin.png") %>
-    <div data-1300="opacity:1; margin-top:10px;" data-1850="opacity:0; margin-top:-100px;">
-      <h2>Developer @ Lin Digital 2013 - Current</h2>
-    </div>
-    <div class="large-10 medium-8 show-for-medium-up" id="vitals" data-1300="opacity:0; margin-top:50px;margin-left:10%;margin-right:10%;" data-2100="opacity:1; margin-top: 5px;margin-left:10%;margin-right:10%" >
-    <ul>
-      <% words = ["Built gem to connect to Liverail API similar to the DFP Api gem","Worked on team to create Liverail Campaign Management and Reporting application.","Developed application to collect and report on statistics from 30+ publishers/advertisers for accounting and pacing of advertisements saving 3 + hours of manual work per day.","Worked with team to organize and implement a data warehouse solution using Pentaho","Created a live preview page for Google DFP ads for testing purposes","Added tagging ability to insertion orders"] %>
-      <% first = 1300 %>
-      <% second = 1302 %>
-      <% words.each do |word| %>
-      <li><% word.split.each do |w| %>
-          <span data-<%=first%>=<%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
-          <%= w == " " ? "\f " : w %>
-        </span>
-        &nbsp
-        <% first += 5 %>
-        <% second += 5 %>
-        <% end %>
-        <% end %>
-      </li>
+  <div class="row current" data-2100="opacity:0; position: fixed; top: 395px; width:100%;" data-3100="opacity:1;  width:100%; position: fixed; top:45px;"
+  data-3500="opacity:0;" >
+    <h3>Some Things I Can Do</h3>
+    <% @skills = %w(Ruby Rails HTML MySQL Mongodb JavaScript CSS Sinatra jQuery RSpec Front-end_Design) %>
+    <ul id="skills2">
+      <% @skills.each do |skill| %>
+      <li><%= skill %></li>
+      <% end %>
     </ul>
   </div>
-   <div class="show-for-small-only tinytxt" data-1300="opacity:0; margin-top:50px;margin-left:10%;margin-right:10%;" data-2100="opacity:1; margin-top: 5px;margin-left:10%;margin-right:10%">
-    <ul>
-      <% words = ["Built gem to connect to Liverail API similar to the DFP Api gem","Worked on team to create Liverail Campaign Management and Reporting application.","Developed application to collect and report on statistics from 30+ publishers/advertisers for accounting and pacing of advertisements saving 3 + hours of manual work per day.","Worked with team to organize and implement a data warehouse solution using Pentaho","Created a live preview page for Google DFP ads for testing purposes","Added tagging ability to insertion orders"] %>
+   <div class="row current" data-3100="opacity:0; position: fixed; top: 395px; width:100%;" data-4100="opacity:1; width:100%; position: fixed; top:45px;"
+   data-5000="opacity:0;" >
+    <h3>PROFESSIONAL EXPERIENCE</h3>
+    <h4>DEVELOPER 08/2013 - Current</h4>
+    <p>Lin-Digital   Austin, TX</p>
+    <p>Phone: (512) 380-4400</p>
 
-      <% words.each do |word| %>
-      <li><%= word %></li>
-        <% end %>
-      </ul>
+    <p> Created two applications that improved productivity of multiple teams by automating reporting, statistical analysis, and accounting duties resulting in an average of 3+ hours of work per day saved per employee.</p>
+    <p> Contributed to the development and maintenance of multiple applications for internal and external users. These applications facilitated with the creation of Insertion Orders, Media Plans, and Campaigns for clients through a central location and sending the details to multiple ad networks to run advertisements as well as tracking advertising statistics.</p>
+    <p> Worked with key individuals and users to gather requirements and feedback on multiple projects in order to deliver new applications, features requests, and general changes to current applications and processes to improve workflow and better serve users.</p>
   </div>
-  </div>
+  <div class="row current" data-4500="opacity:0; position: fixed; top: 395px; width:100%;" data-5500="opacity:1;  width:100%; position: fixed; top:45px; height:400px " >
+    <h3>EDUCATION AND CERTIFICATIONS</h3>
+      <h4>DEV BOOTCAMP (Graduated 2013)</h4>
+      <h5>Web Development<h5>
+      <p>9-week learning intensive course based around Ruby on Rails and web development in Chicago, IL</p>
 
-   <div class="row build show-for-medium-up" id="picright" data-3200="opacity:0; position: fixed; top: 900px;right:100%; width:33%;margin:auto;" data-4500="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;right:35%"data-5000="opacity:0;">
-    <%= image_tag("dive.jpg") %>
-    <h2>
-      DISCOVER
-    </h2>
-  </div>
-     <div class="row build show-for-medium-up" id="picleft" data-4500="opacity:0; position: fixed; top: 900px; width:33%;margin:auto;left:100%" data-5000="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;left:35%;"data-5500="opacity:0;" >
-    <%= image_tag("books.jpg") %>
-    <h2>
-      LEARN
-    </h2>
-  </div>
-   <div class="row build show-for-medium-up" id="picright" data-5000="opacity:0; position: fixed; top: 900px;right:100%; width:33%;margin:auto;" data-5500="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;right:35%;" >
-    <%= image_tag("tools.JPG") %>
-    <h2>
-      BUILD
-    </h2>
+      <h4>TEXAS TECH UNIVERSITY</h4>
+      <p>Bachelor of Business Administration (Graduated 2009)</p>
+      <p>Majored in Marketing</p>
+    </div>
   </div>
 </div>
 </div>
 <script type="text/javascript">
-  $(document).ready(function(){
-      $(".footer").hide();
-  })
-      var s = skrollr.init({
-        forceHeight: true
+$(document).ready(function(){
+  $(".footer").hide();
+})
+var s = skrollr.init({
+  forceHeight: true
 });
 </script>
