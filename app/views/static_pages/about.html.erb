@@ -1,24 +1,6 @@
 <% provide(:title, 'About') %>
-
-<!-- <div class= "row sticky large-1 medium-1 columns about-wrap">
-  <div id="about-nav">
-    <nav>
-      <ul>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#lin">Dev Experience</a></li>
-      </ul>
-    </nav>
-  </div>
-</div> -->
 <div class="row large" data-emit-events>
   <div class="inner-content">
-<!--     <p>
-      I have been developing since Early 2013 and am always interested in learning more.
-    </p>
-
-    <p>
-      This blog is meant to help others, as well as myself as a place to find answers to some questions that come up regularly or that took me more than a quick Google to solve if their weren't a whole lot of quick answers out there.
-    </p> -->
     <div class="row show-for-medium-up" id="about" data-50="opacity:1 position: fixed; top: 45px; width:100%; height:350px" data-200="opacity:1;  width:100%; position: fixed;" data-1200="" data-2400="opacity:1;  width:100%; position: fixed; top: -50px;" >
      <a name="about"></a>
      <div id="vitals" data-50="opacity:1; margin-top:50px;" data-200="opacity:0; margin-top: 70px;" >
@@ -49,7 +31,6 @@
      </div>
   </div>
   <div class="row" id="current" data-1300="opacity:1 position: fixed; top: 395px; width:100%;" data-2100="opacity:1;  width:100%; position: fixed; top:45px; " >
-    <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
     <%= image_tag("lin.png") %>
     <div data-1300="opacity:1; margin-top:10px;" data-1850="opacity:0; margin-top:-100px;">
       <h2>Developer @ Lin Digital 2013 - Current</h2>
@@ -61,9 +42,6 @@
       <% second = 1302 %>
       <% words.each do |word| %>
       <li><% word.split.each do |w| %>
-<!--         <span data-<%=first%>=<#%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<#%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
-          <#%= w == " " ? "\f " : w %>
-        </span> -->
           <span data-<%=first%>=<%= w == " " ? "margin-right:0px;opacity:0;margin-top:50px;" : "margin-right:-4px;opacity:0;margin-top:50px;" %> data-<%=second%>=<%= w == " " ? "margin-right:0px;opacity:1;margin-top:5px;" : "margin-right:-4px;opacity:1;margin-top:5px;" %>>
           <%= w == " " ? "\f " : w %>
         </span>
@@ -87,119 +65,25 @@
   </div>
 
    <div class="row build show-for-medium-up" id="picright" data-3200="opacity:0; position: fixed; top: 900px;right:100%; width:33%;margin:auto;" data-4500="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;right:35%"data-5000="opacity:0;">
-    <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
     <%= image_tag("dive.jpg") %>
     <h2>
       DISCOVER
     </h2>
-    <!-- <div data-3100="opacity:1; margin-top:10px;" data-3650="opacity:0; margin-top:-100px;">
-      <h2>Developer @ Lin Digital 2013 - Current</h2>
-    </div> -->
   </div>
      <div class="row build show-for-medium-up" id="picleft" data-4500="opacity:0; position: fixed; top: 900px; width:33%;margin:auto;left:100%" data-5000="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;left:35%;"data-5500="opacity:0;" >
-    <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
     <%= image_tag("books.jpg") %>
     <h2>
       LEARN
     </h2>
-    <!-- <div data-3100="opacity:1; margin-top:10px;" data-3650="opacity:0; margin-top:-100px;">
-      <h2>Developer @ Lin Digital 2013 - Current</h2>
-    </div> -->
   </div>
    <div class="row build show-for-medium-up" id="picright" data-5000="opacity:0; position: fixed; top: 900px;right:100%; width:33%;margin:auto;" data-5500="opacity:1;  width:33%; position: fixed; top:395px;margin:auto;right:35%;" >
-    <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
     <%= image_tag("tools.JPG") %>
     <h2>
       BUILD
     </h2>
-    <!-- <div data-3100="opacity:1; margin-top:10px;" data-3650="opacity:0; margin-top:-100px;">
-      <h2>Developer @ Lin Digital 2013 - Current</h2>
-    </div> -->
   </div>
 </div>
 </div>
-<!-- <div class="fake-for-scroll"> -->
-  <!-- </div> -->
-  <!-- </div> -->
-  <!-- <div class="row" id="current" data-1300="opacity:1 position: fixed; top: 395px; width:100%; margin-left:30%;" data-2100="opacity:1;  width:100%; position: fixed; top:395px; margin-left:0%;" > -->
-  <!-- <div class="plaxEl" data-106-top="opacity: 0; margin-left:5px;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; margin-left: 50%;"  data-anchor-target="#current"> -->
-  <!-- <h2>Developer - Lin Digital</lh2> -->
-  <!-- </div> -->
-  <!-- </div> -->
-
-  <!-- </div> -->
-       <!--   <div class="row info" id="lin" data-1300="opacity:1 position: fixed; top: 395px; width:100%; height:350px" data-2100="opacity:1;  width:100%; position: fixed; top:45px; left:300px;" >
-       <ul>
-            <li>Built gem to connect to Liverail API similar to the DFP Api gem</li>
-            <li>Developed application to collect and report on statistics from 30+ publishers/advertisers for accounting and pacing of advertisements</li>
-            <li>Worked with team to organize and implement a data warehouse solution using Pentaho</li>
-            <li>Created a live preview page for Google DFP ads for testing purposes</li>
-            <li>Added tagging ability to insertion orders</li>
-          </ul>
-        </div> -->
-       <!-- <div class="row" id="current" data-1300="opacity:1 position: fixed; top: 395px; width:100%; height:350px" data-2100="opacity:1;  width:100%; position: fixed; top:45px" >
-        <h2>Ruby</lh2>
-        </div> -->
-        <!-- <div id="transform row resume" data-200="transform:scale(0) rotate(0deg); opacity:1" data-800="transform:scale(1) rotate(1440deg);opacity:1;" data-1000="" data-1500="transform:scale(5) rotate(3240deg);opacity:0;">
-        <a name="resume"></a>
-        <h3>Development Experience</h3>
-               <ul>
-          <li>Ruby</li>
-          <li>Rails and Sinatra</li>
-          <li>The MEAN Stack</li>
-          <li>Git (Version Control)</li>
-          <li>Javascript, jQuery</li>
-          <li>HTML, HTML5 and CSS</li>
-          <li>TDD with RSpec</li>
-          <li>MySQL, MongoDb</li>
-          <li>Some Photoshop</li>
-        </ul>
-      </div>
-
-    <h2>transform</h2>
-    <p>scale, skew and rotate the sh** out of any element</p>
-  </div> -->
-      <!-- <div>
-        <ul>
-          <li>Ruby</li>
-          <li>Rails and Sinatra</li>
-          <li>The MEAN Stack</li>
-          <li>Git (Version Control)</li>
-          <li>Javascript, jQuery</li>
-          <li>HTML, HTML5 and CSS</li>
-          <li>TDD with RSpec</li>
-          <li>MySQL, MongoDb</li>
-          <li>Some Photoshop</li>
-        </ul>
-
-        <h3>Previous Work Experience</h3>
-        <ul>
-          <li>Developer - Lin Digital 2013-2014</li>
-          <ul>
-            <li>Built gem to connect to Liverail API similar to the DFP Api gem</li>
-            <li>Developed application to collect and report on statistics from 30+ publishers/advertisers for accounting and pacing of advertisements</li>
-            <li>Worked with team to organize and implement a data warehouse solution using Pentaho</li>
-            <li>Created a live preview page for Google DFP ads for testing purposes</li>
-            <li>Added tagging ability to insertion orders</li>
-          </ul>
-          <li>MWD Field Engineer - LEAM Drilling Systems Inc.</li>
-        </ul>
-
-        <h3>Education</h3>
-        <a name="education"></a>
-        <ul>
-          <li><b>Dev Bootcamp</b>,  a 9-week learning intensive course based around Ruby and web development</li>
-          <li><b>Texas Tech University</b>, Bachelor of Business Administration, Concentration in Marketing (Graduated 12/2009)
-          </li>
-        </ul>
-      </div>
-    </div> -->
-  <!-- <div class="row fuck" id="interests">
-    <div id="top?"></div>
-    <a name="interests"></a>
-    <h1>Interests</h1>
-  </div> -->
-  <!-- </div> -->
 <script type="text/javascript">
   $(document).ready(function(){
       $(".footer").hide();
@@ -208,19 +92,3 @@
         forceHeight: true
 });
 </script>
-
-<!-- <ol class="joyride-list" data-joyride>
-  <li data-id="firstStop" data-text="Next" data-options="tip_location: top">
-    <p>Click Next to check out my Resume and Interests below or x to stop this getting pulled around.</p>
-  </li>
-  <li data-id="resume" data-class="custom so-awesome" data-text="Next" data-options="tip_location:top">
-    <h4>Stop #1</h4>
-    <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
-  </li>
-  <li data-id="interests" data-button="Next" data-options="tip_location:top;tip_animation:fade">
-    <h4>Stop #2</h4>
-    <p>Get the details right by styling Joyride with a custom stylesheet!</p>
-  </li>
-  <li data-id="top?" data-button="Back to Top?" data-options="tip_location:bottom;"</li>
-    <li data-id="firstStop" data-button="" data-options="tip_location:bottom;"</li>
-    </ol> -->
