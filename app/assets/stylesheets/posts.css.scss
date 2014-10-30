@@ -14,8 +14,7 @@
 
 .post-description li div{
   height: 350px;
-  // width:100%;
-  // overflow: hidden;
+  word-wrap: break-word;
 }
 
 @mixin post-desc-content{
