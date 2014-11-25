@@ -44,7 +44,8 @@
 
 body{
   overflow-y: scroll;
-  background: url(blue.jpeg) no-repeat center center fixed;
+//  background: url(blue.jpeg) no-repeat center center fixed;
+  background: white;
   background-size:cover;
 }
 
@@ -181,7 +182,7 @@ body.about_bg{
 
 .footer{
   margin-top: 10px;
-  background: white;
+  background: #008cba;
   text-align:center;
   div{
     p{
@@ -192,7 +193,7 @@ body.about_bg{
       li{
         display:inline;
         :hover{
-          background:#008cba;
+//          box-shadow:1px 1px 1px white;
         }
       }
     }
